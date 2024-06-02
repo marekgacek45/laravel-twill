@@ -28,5 +28,22 @@ class Page extends Model
     public $slugAttributes = [
         'title',
     ];
+
+    public $mediasParams = [
+        'cover' => [
+            'default' => [
+                [
+                    'name' => 'default',
+                    'ratio' => 16 / 9,
+                ],
+            ],
+            'mobile' => [
+                [
+                    'name' => 'landscape',
+                    'ratio' => 16 / 9,
+                ],
+            ],
+        ],
+    ];
     
 }
